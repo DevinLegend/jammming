@@ -1,5 +1,5 @@
 import React from 'react';
-import Tracklist from './Tracklist';
+import Tracklist from '../Tracklist/Tracklist';
 
 const SearchResults = ({ searchResults }) => {
   // Define the search results data (you can use mock data for now)

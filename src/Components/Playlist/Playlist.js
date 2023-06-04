@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import SaveToSpotifyButton from './SaveToSpotifyButton';
-import Tracklist from './Tracklist';
+import Tracklist from '../Tracklist/Tracklist';
 import Spotify from '../../util/spotify';
 
 const Playlist = ({ playlistName, playlistTracks, updatePlaylistName, updatePlaylistTracks }) => {
