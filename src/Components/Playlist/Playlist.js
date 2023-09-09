@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import SaveToSpotifyButton from './SaveToSpotifyButton';
+import SaveToSpotifyButton from '../SaveToSpotifyButton';
 import Tracklist from '../Tracklist/Tracklist';
-import Spotify from '../../util/spotify';
+import Spotify from '../../Components/utils/Spotify';
 
 const Playlist = ({ playlistName, playlistTracks, updatePlaylistName, updatePlaylistTracks }) => {
   const [newPlaylistName, setNewPlaylistName] = useState(playlistName);
@@ -38,7 +38,6 @@ const Playlist = ({ playlistName, playlistTracks, updatePlaylistName, updatePlay
         onBlur={handleNameBlur}
       />
       <Tracklist
-        tracks={playlistTracks}
         playlistTracks={playlistTracks}
         updatePlaylistTracks={updatePlaylistTracks}
       />

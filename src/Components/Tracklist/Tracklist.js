@@ -1,7 +1,11 @@
 import React from 'react';
-import Track from './Track';
+import Track from '../Track/Track';
 
 const Tracklist = ({ tracks, playlistTracks, updatePlaylistTracks }) => {
+  if (!tracks) {
+    return null; // or render a loading indicator or fallback content
+  }
+
   const addTrack = (track) => {
     const isTrackInPlaylist = playlistTracks.find((playlistTrack) => playlistTrack.id === track.id);
     if (!isTrackInPlaylist) {

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Track = ({ track, onAdd }) => {
+const Track = ({ track, onAdd, onRemove }) => {
   const handleAddTrack = () => {
     onAdd(track);
   };
